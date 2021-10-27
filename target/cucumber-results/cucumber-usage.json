@@ -1,0 +1,145 @@
+[
+  {
+    "source": "^I validate the response code \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I validate the response code \"302\"",
+        "aggregatedDurations": {
+          "average": 0.001503366,
+          "median": 0.0000787
+        },
+        "durations": [
+          {
+            "duration": 0.0043696,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:8"
+          },
+          {
+            "duration": 0.0000618,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:8"
+          },
+          {
+            "duration": 0.0000787,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:33"
+          }
+        ]
+      },
+      {
+        "name": "I validate the response code \"200\"",
+        "aggregatedDurations": {
+          "average": 0.000155566,
+          "median": 0.0000973
+        },
+        "durations": [
+          {
+            "duration": 0.0003001,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:15"
+          },
+          {
+            "duration": 0.0000973,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:15"
+          },
+          {
+            "duration": 0.0000693,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:45"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I request bill payment using POST call$",
+    "steps": [
+      {
+        "name": "I request bill payment using POST call",
+        "aggregatedDurations": {
+          "average": 0.4693712,
+          "median": 0.4693712
+        },
+        "durations": [
+          {
+            "duration": 0.4693712,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I run the GET call and generate the session ID$",
+    "steps": [
+      {
+        "name": "I run the GET call and generate the session ID",
+        "aggregatedDurations": {
+          "average": 1.4678513,
+          "median": 0.8830882
+        },
+        "durations": [
+          {
+            "duration": 2.8114366,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:4"
+          },
+          {
+            "duration": 0.7090291,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:4"
+          },
+          {
+            "duration": 0.8830882,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:29"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I create account using POST call$",
+    "steps": [
+      {
+        "name": "I create account using POST call",
+        "aggregatedDurations": {
+          "average": 1.6728264,
+          "median": 1.6728264
+        },
+        "durations": [
+          {
+            "duration": 2.0246766,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:9"
+          },
+          {
+            "duration": 1.3209762,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I validate the account details using  GET call$",
+    "steps": [
+      {
+        "name": "I validate the account details using  GET call",
+        "aggregatedDurations": {
+          "average": 1.33888815,
+          "median": 1.2414517
+        },
+        "durations": [
+          {
+            "duration": 1.6422097,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:16"
+          },
+          {
+            "duration": 1.2304395,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:16"
+          },
+          {
+            "duration": 1.2378607,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:46"
+          },
+          {
+            "duration": 1.2450427,
+            "location": "src/test/FeatureFiles/AssignmentB.feature:52"
+          }
+        ]
+      }
+    ]
+  }
+]

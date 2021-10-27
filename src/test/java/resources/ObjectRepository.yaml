@@ -1,0 +1,50 @@
+Login:
+   UserName: //input[@name='username']
+   Password: //input[@name='password']
+   LoginButton: //input[@type='submit']
+AccountsOverview:
+   Header: //h1[contains(text(), "Accounts Overview")]
+   AccountNumber: //a[text()='VARIABLE']
+AccountServices:
+   Header: 
+   OpenNewAccount: //a[contains(text(), "Open New Account")]
+   AccountsOverview: //a[contains(text(), "Accounts Overview")]
+   BillPay: //a[contains(text(), "Bill Pay")]
+OpenNewAccount:
+   Header: //a[contains(text(), "Open New Account")]
+   AccountType: //select[@id='type']
+   ExistingAccount: //select[@id='fromAccountId']
+   OpenNewAccountButton: //input[@type='submit']
+AccountOpened:
+   Header: //h1[contains(text(), "Account Opened!")]
+   AccountNumber: //a[@id="newAccountId"] 
+AccountDetails:
+   Header: //h1[contains(text(), "Account Details")]
+   AccountNumber: //td[@id='accountId']
+   AccountType: //td[@id='accountType' and text()='VARIABLE']
+   Balance: //td[@id='balance' and text()='VARIABLE']
+   Available: //td[@id='availableBalance' and text()='VARIABLE']
+   Date: //table[@id='transactionTable']//td[text()='VARIABLE' and position()=1]
+   Transaction: //table[@id='transactionTable']//a[text()='VARIABLE']
+   Debit: //table[@id='transactionTable']//td[text()='VARIABLE' and position()=3]
+   Credit: //table[@id='transactionTable']//td[text()='VARIABLE' and position()=4]
+BillPaymentService:
+   Header: //h1[contains(text(), "Bill Payment Service")]
+   PayeeName: //input[@name='payee.name']	
+   Address: //input[@name='payee.address.street']
+   City: //input[@name='payee.address.city']	
+   State: //input[@name='payee.address.state']	
+   ZipCode: //input[@name='payee.address.zipCode']
+   PhoneNumber: //input[@name='payee.phoneNumber']
+   AccountNumber: //input[@name='payee.accountNumber']
+   VerifyAccountNumber: //input[@name='verifyAccount']
+   Amount: //input[@name='amount']
+   FromAccountNumber: //select[@name='fromAccountId']
+   SendPaymentButton: //input[@type='submit']
+BillPaymentComplete:
+   Header: //h1[contains(text(), "Bill Payment Complete")]
+   SuccessMessagePayeeName: //span[@id='payeeName']
+   SuccessMessageAmount: //span[@id='amount']
+   SuccessMessageAccount: //span[@id='fromAccountId']
+   
+   

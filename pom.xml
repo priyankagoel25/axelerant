@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Axelerant</groupId>
+  <artifactId>Axelerant</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+<dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>4.11</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>3.7.1</version>
+    <scope>test</scope>
+    <exclusions>
+                <exclusion>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+</dependency>
+      <dependency>
+         <groupId>info.cukes</groupId>
+         <artifactId>cucumber-java</artifactId>
+         <version>1.2.5</version>
+         <scope>test</scope>
+      </dependency>
+  
+      <dependency>
+         <groupId>commons-lang</groupId>
+         <artifactId>commons-lang</artifactId>
+         <version>20030203.000129</version>
+      </dependency>
+      <dependency>
+         <groupId>org.seleniumhq.selenium</groupId>
+         <artifactId>selenium-java</artifactId>
+         <version>3.141.59</version>
+         <scope>test</scope>
+      </dependency>
+    
+      <dependency>
+         <groupId>info.cukes</groupId>
+         <artifactId>cucumber-picocontainer</artifactId>
+         <version>1.2.5</version>
+         <scope>test</scope>
+      </dependency>
+      <dependency>
+         <groupId>info.cukes</groupId>
+         <artifactId>gherkin</artifactId>
+         <version>2.12.2</version>
+         <scope>provided</scope>
+      </dependency>
+      <dependency>
+         <groupId>org.seleniumhq.selenium</groupId>
+         <artifactId>selenium-server</artifactId>
+         <version>3.141.59</version>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.commons</groupId>
+         <artifactId>commons-collections4</artifactId>
+         <version>4.1</version>
+      </dependency>
+      <dependency>
+         <groupId>info.cukes</groupId>
+         <artifactId>cucumber-junit</artifactId>
+         <version>1.2.5</version>
+      </dependency>
+      <dependency>
+         <groupId>com.vimalselvam</groupId>
+         <artifactId>cucumber-extentsreport</artifactId>
+         <version>3.1.1</version>
+      </dependency>
+      <dependency>
+         <groupId>com.aventstack</groupId>
+         <artifactId>extentreports</artifactId>
+         <version>4.0.9</version>
+      </dependency>
+  <!-- https://mvnrepository.com/artifact/com.applitools/eyes-selenium-java3 -->
+<dependency>
+    <groupId>com.applitools</groupId>
+    <artifactId>eyes-selenium-java3</artifactId>
+    <version>3.208.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>rest-assured</artifactId>
+<version>4.4.0</version>
+</dependency>
+<dependency>
+<groupId>com.googlecode.json-simple</groupId>
+<artifactId>json-simple</artifactId>
+<version>1.1.1</version>
+</dependency>
+<dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-java8</artifactId>
+<version>1.2.5</version>
+</dependency>
+<dependency>
+<groupId>info.cukes</groupId>
+<artifactId>cucumber-core</artifactId>
+<version>1.2.5</version>
+</dependency>
+  </dependencies>
+  
+</project>

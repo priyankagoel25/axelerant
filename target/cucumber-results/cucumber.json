@@ -1,0 +1,728 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2356596000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "base.initializeDriver()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Create  Checking  Account",
+        "description": "",
+        "id": "automating-assignment-b;\u003cdescription\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2622452500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "base.quitDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2811436600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I run the GET call and generate the session ID",
+            "match": {
+              "location": "stepDefinitions.auhenticateAPI(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "login.htm"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "Username",
+                  "usernameFromConfig"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "Password",
+                  "passwordFromConfig"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4369600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I validate the response code \"302\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "302",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.validateRespseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2024676600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I create account using POST call",
+            "match": {
+              "location": "stepDefinitions.createAccount(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "services_proxy/bank/createAccount"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "customerID",
+                  "customerIDFromConfig"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "accountType",
+                  "0"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "fromAccountID",
+                  "13344"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "FetchAccountID",
+                  "CheckingAccountNumber"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 300100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I validate the response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.validateRespseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1642209700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I validate the account details using  GET call",
+            "match": {
+              "location": "stepDefinitions.validateAccountDetails(DataTable)"
+            },
+            "matchedColumns": [
+              3,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "services_proxy/bank/accounts"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "id",
+                  "CheckingAccountNumberFromHashMap"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "customerID",
+                  "customerIDFromConfig"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "balance",
+                  "100.0"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "type",
+                  "CHECKING"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1037600100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "base.initializeDriver()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Create  Savings  Account",
+        "description": "",
+        "id": "automating-assignment-b;\u003cdescription\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 2586766000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "base.quitDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 709029100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I run the GET call and generate the session ID",
+            "match": {
+              "location": "stepDefinitions.auhenticateAPI(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "login.htm"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "Username",
+                  "usernameFromConfig"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "Password",
+                  "passwordFromConfig"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 61800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I validate the response code \"302\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "302",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.validateRespseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1320976200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I create account using POST call",
+            "match": {
+              "location": "stepDefinitions.createAccount(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              4
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "services_proxy/bank/createAccount"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "customerID",
+                  "customerIDFromConfig"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "accountType",
+                  "1"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "fromAccountID",
+                  "13344"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "FetchAccountID",
+                  "SavingAccountNumber"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 97300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I validate the response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.validateRespseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1230439500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I validate the account details using  GET call",
+            "match": {
+              "location": "stepDefinitions.validateAccountDetails(DataTable)"
+            },
+            "matchedColumns": [
+              3,
+              6
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "services_proxy/bank/accounts"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "id",
+                  "SavingAccountNumberFromHashMap"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "customerID",
+                  "customerIDFromConfig"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "balance",
+                  "100.0"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "type",
+                  "SAVINGS"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1029087300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "base.initializeDriver()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "Bill Pay from Account A to Account B and then validte the details",
+        "description": "",
+        "id": "automating-assignment-b;\u003cdescription\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2864739600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "base.quitDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 883088200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I run the GET call and generate the session ID",
+            "match": {
+              "location": "stepDefinitions.auhenticateAPI(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "login.htm"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "Username",
+                  "usernameFromConfig"
+                ],
+                "line": 31
+              },
+              {
+                "cells": [
+                  "Password",
+                  "passwordFromConfig"
+                ],
+                "line": 32
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I validate the response code \"302\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "302",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.validateRespseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 469371200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I request bill payment using POST call",
+            "match": {
+              "location": "stepDefinitions.billPay(DataTable)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "services_proxy/bank/billpay"
+                ],
+                "line": 35
+              },
+              {
+                "cells": [
+                  "street",
+                  "TestStreet"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "city",
+                  "TestCity"
+                ],
+                "line": 37
+              },
+              {
+                "cells": [
+                  "state",
+                  "TestState"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "zipcode",
+                  "10011"
+                ],
+                "line": 39
+              },
+              {
+                "cells": [
+                  "name",
+                  "TestUser"
+                ],
+                "line": 40
+              },
+              {
+                "cells": [
+                  "phoneNumber",
+                  "9876598765"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "amount",
+                  "200.00"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "fromAccountNumber",
+                  "SavingAccountNumberFromHashMap"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "toAccountNumber",
+                  "CheckingAccountNumberFromHashMap"
+                ],
+                "line": 44
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 69300,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I validate the response code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.validateRespseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1237860700,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I validate the account details using  GET call",
+            "match": {
+              "location": "stepDefinitions.validateAccountDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "services_proxy/bank/accounts"
+                ],
+                "line": 47
+              },
+              {
+                "cells": [
+                  "id",
+                  "CheckingAccountNumberFromHashMap"
+                ],
+                "line": 48
+              },
+              {
+                "cells": [
+                  "customerID",
+                  "customerIDFromConfig"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "balance",
+                  "100.0"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "type",
+                  "CHECKING"
+                ],
+                "line": 51
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1245042700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I validate the account details using  GET call",
+            "match": {
+              "location": "stepDefinitions.validateAccountDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "URLExtension",
+                  "services_proxy/bank/accounts"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "id",
+                  "SavingAccountNumberFromHashMap"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "customerID",
+                  "customerIDFromConfig"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "balance",
+                  "100.0"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "type",
+                  "SAVINGS"
+                ],
+                "line": 57
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Automating Assignment B",
+    "description": "",
+    "id": "automating-assignment-b",
+    "keyword": "Feature",
+    "uri": "src/test/FeatureFiles/AssignmentB.feature"
+  }
+]

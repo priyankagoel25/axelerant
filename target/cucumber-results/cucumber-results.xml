@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="26.076349">
+<testcase classname="Automating Assignment B" name="Create  Checking  Account" time="11.462041">
+<system-out><![CDATA[Given I run the GET call and generate the session ID........................passed
+Then I validate the response code "302".....................................passed
+Then I create account using POST call.......................................passed
+Then I validate the response code "200".....................................passed
+And I validate the account details using  GET call..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automating Assignment B" name="Create  Savings  Account" time="6.88497">
+<system-out><![CDATA[Given I run the GET call and generate the session ID........................passed
+Then I validate the response code "302".....................................passed
+Then I create account using POST call.......................................passed
+Then I validate the response code "200".....................................passed
+And I validate the account details using  GET call..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automating Assignment B" name="Bill Pay from Account A to Account B and then validte the details" time="7.729338">
+<system-out><![CDATA[Given I run the GET call and generate the session ID........................passed
+Then I validate the response code "302".....................................passed
+Then I request bill payment using POST call.................................passed
+Then I validate the response code "200".....................................passed
+And I validate the account details using  GET call..........................passed
+And I validate the account details using  GET call..........................passed
+]]></system-out>
+</testcase>
+</testsuite>
